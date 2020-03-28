@@ -1,0 +1,23 @@
+
+//主题
+[data-theme='green']{
+    @import '@/assets/themes/theme/green.scss';
+}
+[data-theme='orange']{
+    @import '@/assets/themes/theme/orange.scss';
+}
+[data-theme='red']{
+    @import '@/assets/themes/theme/red.scss';
+}
+[data-theme='purple']{
+    @import '@/assets/themes/theme/purple.scss';
+}
+[data-theme='qing']{
+    @import '@/assets/themes/theme/qing.scss';
+}
+[data-theme='gray']{
+    @import '@/assets/themes/theme/gray.scss';
+}
+[data-theme='blue']{
+    @import '@/assets/themes/theme/blue.scss';
+}

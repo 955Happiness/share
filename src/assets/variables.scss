@@ -1,0 +1,24 @@
+$E: null;
+$B: null;
+$theme-name:'green' !default;
+
+$primary-color:rgb(0,153,68) !default;
+$success-color:#409EFF !default;
+$warning-color:rgb(235,97,68) !default;
+$danger-color:rgb(230,0,18) !default;
+$white-color:#fff !default;
+
+
+$navbar-height:60px !default;
+$router-height:40px !default;
+$radius:10px !default;
+$triangle-size: 8px !default;  //三角型尺寸
+$shadow-color: #eee !default;
+$shadow-color-alpha:rgb(238,238,238) !default;
+// $shadow-color-alpha: rgba($shadow-color,0.8) !default;
+
+$--color-primary:$primary-color;
+$--color-warning:$warning-color;
+$--color-error:$danger-color;
+
+

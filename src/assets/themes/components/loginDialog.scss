@@ -1,0 +1,35 @@
+.loginDialog{
+  .login{
+    cursor: pointer;
+    padding: 0 10px;
+    letter-spacing: 0.2em;
+
+    .login-item{
+        position: relative;
+        &.active {
+          color: $primary-color;
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+          height: 2px;
+          width: 10px;
+          position: absolute;
+          bottom: 0px;
+          left: 50%;
+          margin-left: -5px;
+          background-color: $primary-color;
+          transition: all linear 0.3s;
+          transform: scaleX(0);
+          opacity: 0;
+        }
+        &.active::after {
+          transform: scaleX(1);
+          opacity: 1;
+        }
+    }
+  }
+  .el-form-item{
+    margin-bottom: 12px !important;
+  }
+}

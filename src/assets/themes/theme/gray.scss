@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+$primary-color:#909399;
+
+$--color-primary: $primary-color;
+
+$primary-name:'gray';
+@import '../components/app.scss';
+@import "~element-ui/packages/theme-chalk/src/index";
+
+

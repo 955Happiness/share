@@ -1,0 +1,33 @@
+.checkStandard--route{
+      .banner {
+          .banner-content {
+            .fieldContainer {
+              border-radius: $radius/2;
+              background: $white-color;
+              & > .fieldBtn {
+                color: $white-color;
+                background: $primary-color;
+              }
+            }
+            .link {
+              color: $white-color;
+            }
+          }
+        }
+      .standardList {
+        margin: -$navbar-height auto 0;
+        border-radius: $radius;
+        &-content {
+          background-color: $white-color;
+          box-shadow: 0px 0px 4px 2px $shadow-color;
+        }
+        th.is-leaf {
+          border-bottom: 2px solid $primary-color !important;
+        }
+      }
+      // .standard-footer{
+      //   .company-info{
+      //     color: $white-color;
+      //   }
+      // }
+}

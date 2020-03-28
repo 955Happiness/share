@@ -1,0 +1,7 @@
+.btn-group{
+    .btn{
+        &::before{
+            border-top: $triangle-size solid $primary-color;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .unstyle {
+      list-style: none;
+  }
+  .unstyle.inline {
+      >li {
+        float: left;
+      }
+      &::after{
+        content: '';
+        clear: both;
+      }
+  }
+  
+  //Text
+  .text-green{
+      color:$primary-color;
+  }
+  .text-orange{
+      color: $warning-color;
+  }
+  .text-red{
+      color: $danger-color;
+  }
+  .text-left{
+    text-align: left;
+  }
+  .text-center{
+      text-align: center;
+  }
+  .text-right{
+    text-align: right;
+  }
+
+  //Button
+  .btn-blue{
+    background-color: $success-color !important;
+    color: $white-color  !important;
+  }
+  
+  //Status
+  .status-primary{
+    color: $primary-color;
+  }
+  .status-success{
+    color: $success-color;
+  }
+  .status-warning{
+    color: $warning-color;
+  }
+  .status-danger{
+    color: $danger-color;
+  }
+  
+  //Size
+  .height-100{
+    height:100%;
+  }
+  
+  //Layout
+  .layout{
+    display: flex;
+    flex-direction: column;
+    >.layout-main{
+      flex: 1;
+      // overflow-y: auto;
+    }
+  }
+  
+  
+  .company-info {
+    text-align: center;
+    padding: 2px 0;
+    font-size: 120%;
+    color: $white-color;
+  }
+  .btn-group {
+    >.btn {
+      padding: 0 30px;
+      height: 30px;
+      line-height: 30px;
+      position: relative;
+      margin-bottom: 6px;
+      margin-right: 6px;
+      &:last-child{
+        margin-right: 0px;
+      }
+      // & + .btn {
+      //   margin-left: 6px;
+      // }
+      &::before {
+        // $triangle-size:8px;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        
+        z-index: 1;
+        width: 0;
+        height: 0;
+        
+        opacity: 0;
+        transition: opacity .1s linear;
+      }
+      &:hover::before {
+        opacity: 0.8 !important;
+      }
+      &:active::before{
+        opacity: 0.8 !important;
+      }
+      &.active::before {
+        margin-left: -#{$triangle-size};
+        bottom: -#{$triangle-size * 2 + 1};
+        //border-top: $triangle-size solid $primary-color;
+        border-right: $triangle-size solid transparent;
+        border-bottom: $triangle-size solid transparent;
+        border-left: $triangle-size solid transparent;
+        opacity: 1;
+      }
+    }
+  }
+
+
+  //reset elementui style
+  .el-dialog__body {
+    padding:0px 20px 20px !important;
+  }

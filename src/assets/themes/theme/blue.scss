@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+$primary-color:#409EFF;
+
+$--color-primary: $primary-color;
+$--checkbox-checked-background-color: $primary-color;
+
+$primary-name:'blue';
+@import '../components/app.scss';
+@import "~element-ui/packages/theme-chalk/src/index";

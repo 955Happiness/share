@@ -1,0 +1,7 @@
+@import '../../variables.scss';
+$primary-color:#03dac6;
+
+$--color-primary: $primary-color;
+$primary-name:'qing';
+@import '../components/app.scss';
+@import "~element-ui/packages/theme-chalk/src/index";

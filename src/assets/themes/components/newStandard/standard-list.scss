@@ -1,0 +1,13 @@
+.standard-list{
+    .search{
+        &-btn{
+            color: $white-color;
+            background: $primary-color;
+        }
+    }
+    .standard-alert{
+        .el-alert__icon{
+            color: #409EFF;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.newStandard{
+    .newStandar-nav{
+        .newStandard-item{
+            color: $primary-color;
+        }
+        .newStandard-item.router-link-active::before{
+            background-color: $primary-color;
+        }
+    }
+}

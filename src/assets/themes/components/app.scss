@@ -1,0 +1,81 @@
+@import './common.scss';
+
+//Todo 增加组件主题样式  here...
+@import './checkStandard--route.scss';
+@import './newStandard/index.scss';
+
+@import './loginDialog.scss';
+
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background: $primary-color;
+  color: $primary-color;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color: $primary-color;
+}
+.el-input__inner:focus{
+  border-color: $primary-color;
+}
+
+#app {
+  padding-top: $navbar-height;
+  .head {
+    //box-shadow: 0 -2px 6px 0px inset $shadow-color;
+    background: $white-color;
+    height: $navbar-height;
+    line-height: $navbar-height;
+    .logo {
+      line-height: $navbar-height;
+      // animation: glow-#{$primary-name} .5s infinite alternate;
+      // @keyframes glow-#{$primary-name} {
+      //   from {
+      //     text-shadow: 1px 1px 2px $primary-color, 0 0 1em $primary-color, 0 0 0.2em $primary-color;
+      //   }
+      //   to {
+      //       text-shadow: 0 0 10px $primary-color;
+      //   }
+      // }
+    }
+    .nav {
+      .nav-item {
+        &.router-link-active {
+          color: $primary-color;
+        }
+        &::after {
+          background-color: $primary-color;
+        }
+      }
+    }
+    .menu {
+      & > .menu-item {       
+        .colorTheme {
+          background: $white-color;
+        }
+      }
+    }
+    [class^=el-icon-],[class*=" el-icon-"]{
+      border-radius: 9999px;
+    }
+    [class^=el-icon-]:active,[class*=" el-icon-"]:active{
+      animation: box-shadow--#{$primary-name} .1s linear;
+    };
+  }
+}
+[class^=el-icon-]:hover,[class*=" el-icon-"]:hover{
+  color: $primary-color;
+  cursor: pointer;
+};
+@keyframes box-shadow--#{$primary-name} {
+  $number:4px;
+  $opacity:0.3;
+  from{
+      box-shadow: rgba($primary-color,$opacity) 0 0 2px 2px;
+  }
+  to{
+      box-shadow: rgba($primary-color,$opacity) $number 0 2px 4px,
+                  rgba($primary-color,$opacity) 0 $number 2px 4px,
+                  rgba($primary-color,$opacity) -#{$number} 0 2px 4px,
+                  rgba($primary-color,$opacity) 0 -#{$number} 2px 4px;
+  }
+};
